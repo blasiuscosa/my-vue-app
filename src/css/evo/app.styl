@@ -1,0 +1,71 @@
+// Styling for EVO
+.evo
+  // Custom Branding
+  // $
+  $primary ?= #ffffff
+  $secondary ?= #999a9d
+  $positive ?= $action-button-success
+  $negative ?= $action-button-negative
+  $primary-darkened ?= #34bafa
+  $action-button-success ?= #04b363
+  $action-button-negative ?= #cf3030
+  $action-button-dark ?= #1f1d1d
+  $action-button-warning ?= #ea8f00
+  $primary-button-active ?= $primary-darkened
+
+  :root
+    --q-color-primary-darkened $primary-darkened
+    --q-color-action-button-success $action-button-success
+    --q-color-action-button-negative $action-button-negative
+    --q-color-action-button-dark $action-button-dark
+    --q-color-action-button-warning $action-button-warning
+    --q-color-primary-button-active $primary-button-active
+
+  // Color Looping
+  .text-primary-darkened
+    color $primary-darkened !important
+    color var(--q-color-primary-darkened) !important
+
+  .bg-primary-darkened
+    background $primary-darkened !important
+    background var(--q-color-primary-darkened) !important
+
+  .text-action-button-success
+    color $action-button-success  !important
+    color var(--q-color-action-button-success) !important
+
+  .bg-action-button-success
+    background $action-button-success  !important
+    background var(--q-color-action-button-success) !important
+
+  .text-action-button-negative
+    color $action-button-negative  !important
+    color var(--q-color-action-button-negative) !important
+
+  .bg-action-button-negative
+    background $action-button-negative  !important
+    background var(--q-color-action-button-negative) !important
+
+  .text-action-button-dark
+    color $action-button-dark   !important
+    color var(--q-color-action-button-dark) !important
+
+  .bg-action-button-dark
+    background $action-button-dark   !important
+    background var(--q-color-action-button-dark) !important
+
+  .text-action-button-warning
+    color $action-button-warning   !important
+    color var(--q-color-action-button-warning) !important
+
+  .bg-action-button-warning
+    background $action-button-warning  !important
+    background var(--q-color-action-button-warning) !important
+
+  .text-primary-button-active
+    color $primary-button-active   !important
+    color var(--q-color-primary-button-active) !important
+
+  .bg-primary-button-active
+    background $primary-button-active   !important
+    background var(--q-color-primary-button-active) !important

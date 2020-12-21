@@ -1,0 +1,28 @@
+.quasar
+.DS_Store
+.thumbs.db
+node_modules/
+node_modules
+test/e2e/mock-template-build
+*.log
+dist/
+npm-debug.log
+npm-debug.log.*
+selenium-debug.log
+test/unit/coverage
+test/e2e/reports
+cordova/platforms
+cordova/plugins
+thumbs.db
+!.gitkeep
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+# Custom .ENV
+.env
+# Dev Configs
+/dev.conf.js

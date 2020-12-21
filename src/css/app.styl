@@ -1,0 +1,121 @@
+// app global css
+@import "~src/css/html-table.mat.styl"
+@import "~src/css/html-table.ios.styl"
+@import "~src/css/tree.mat.styl"
+@import "~src/css/tree.ios.styl"
+
+body
+  font-family: 'Open Sans', sans-serif;
+
+.filter-holder
+  padding 8px
+  margin 10px 0 10px 0
+
+.verticle-line
+  border-left 1px dotted #38546d
+  height 100%
+
+.bg-img-cube
+  background-image url("~assets/cubes.png")
+  background-repeat repeat
+
+.bg-img-stripe
+  background-image url("~assets/pinstripe-dark.png")
+  background-repeat repeat
+
+.q-markup-table
+  .q-table
+    thead
+      background-color $grey-1 !important
+      color $dark !important
+    th
+      font-weight bolder !important
+      font-size .8rem !important
+      padding 12px !important
+
+.sticky-header-table
+    thead
+      tr:first-child th
+        top: 0
+        background-color $grey-1 !important
+      tr th
+        position: -webkit-sticky
+        position: sticky
+        z-index: 1
+
+//Introjs hack hide introJS hint dialog from showing
+.introjs-tooltipReferenceLayer
+  display none
+
+.freshwidget-button
+  > a
+    position relative !important
+    display inline-block !important
+
+  img
+    width auto !important
+    height 1.8rem !important
+    opacity 0.7 !important
+
+.dashboard-area
+  .freshwidget-button
+    top 12px !important
+    left 510px !important
+    z-index 9499 !important
+
+.auth-area
+  .freshwidget-button
+    right 50px !important
+    z-index 9499 !important
+
+.cv-boxes > div
+  border 1px solid $separator-color
+
+.cv-boxes > div:first-child
+  border-bottom none
+
+.cv-boxes > div:not(:first-child):not(:last-child)
+  border-bottom none
+
+.sticky-horizontal-div-left
+  z-index 1000
+  position absolute
+  left 0
+  overflow hidden
+
+.required
+  .q-field__control
+    .q-field__label:after
+      content ' *'
+      color red
+
+@keyframes placeHolderShimmer {
+  0% {
+    background-position: -468px 0
+  }
+  50% {
+    background-position: -200px 0
+  }
+  100% {
+    background-position: 468px 0
+  }
+}
+
+.animated-background {
+  animation-duration: 1.25s
+  animation-fill-mode: forwards
+  animation-iteration-count: infinite
+  animation-name: placeHolderShimmer
+  animation-timing-function: ease-in
+  background: #ffaaf6
+  background: linear-gradient(to right, rgba(242, 135, 183, 0.1) 8%, rgb(158, 158, 158) 18%, rgba(24, 152, 223, 0) 33%);
+  background-size: 800px 104px
+  position: relative
+  border-radius: 10px !important
+}
+
+.sidebar-menu
+  &.acl-loading
+    .q-item
+      .q-item-main
+        @extend .animated-background
